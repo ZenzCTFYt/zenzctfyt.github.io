@@ -3,11 +3,6 @@ window.onload = function() {
     const profilePhoto = document.getElementById('pfps');
     const photoArray = [
         'pfp1.jpg',
-        'pfp2.jpg',
-        'pfp3.jpg',
-        'pfp4.jpg',
-        'pfp5.jpg',
-        'pfp6.jpg'
 
     ];
     let photoIndex = 0;
