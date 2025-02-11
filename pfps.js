@@ -3,7 +3,7 @@ window.onload = function() {
     const profilePhoto = document.getElementById('pfps');
     const photoArray = [
         'pfp1.jpg',
-        'pfp2.jpg',
+        'pfp1.jpg',
 
     ];
     let photoIndex = 0;
