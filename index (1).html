@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsiaClubSmp - Premium Minecraft Server</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">ASIACLUB<span class="highlight">SMP</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Kenapa Kami?</a></li>
+            <li><a href="#rules">Peraturan</a></li>
+            <li><a href="#join" class="btn-nav">Join Discord</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="THE BEST SERVER">THE BEST SERVER</h1>
+            <h2>DI ASIA TENGGARA</h2>
+            <p>Survival • Community • PvP • Economy</p>
+            <p> <p>
+            <p>INI MASIH PREVIEW YA :)<p>
+                <p> <p>
+            <p>Website by Lutfi<p>
+                <p>ip nya cuma contoh! 😁<p>
+            
+            <div class="server-ip-box" onclick="copyIP()">
+                <span id="ip-text">play.asiaclubsmp.net</span>
+                <i class="fa-regular fa-copy"></i>
+                <div class="tooltip">Klik untuk Copy IP!</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Kenapa <span class="highlight">AsiaClubSmp?</span></h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Anti-Lag System</h3>
+                    <p>Server kami dioptimalkan dengan hardware Ryzen 9 terbaru untuk pengalaman bermain tanpa patah-patah.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Advanced Anti-Cheat</h3>
+                    <p>Sistem keamanan canggih yang mendeteksi cheater secara instan demi kenyamanan bersama.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Komunitas Solid</h3>
+                    <p>Ribuan player aktif, staff ramah, dan event mingguan yang selalu seru dan berhadiah.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Ekonomi Seimbang</h3>
+                    <p>Sistem ekonomi yang dirancang matang, tidak pay-to-win, dan adil bagi semua player.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Server <span class="highlight">Rules</span></h2>
+            <p class="subtitle">Membaca peraturan adalah kunci agar tidak terkena Banned.</p>
+            
+            <div class="rules-container reveal">
+                <div class="rules-category">
+                    <h3><i class="fa-solid fa-book"></i> Perilaku Umum</h3>
+                    <ul class="rules-list">
+                        <li>1. Dilarang melakukan tindakan Toxic berlebihan.</li>
+                        <li>2. Hormati sesama player dan staff server.</li>
+                        <li>3. Dilarang SARA (Suku, Agama, Ras, Antargolongan).</li>
+                        <li>4. Dilarang membahas politik praktis.</li>
+                        <li>5. Jangan melakukan spam chat atau command.</li>
+                        <li>6. Dilarang menggunakan nama/nickname tidak senonoh.</li>
+                        <li>7. Dilarang mempromosikan server lain (IP Promotion).</li>
+                        <li>8. Penipuan (Scamming) terhadap player lain dilarang keras.</li>
+                        <li>9. Dilarang mengemis rank atau item kepada staff.</li>
+                        <li>10. Gunakan Bahasa Indonesia atau Inggris yang baik.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fa-solid fa-gamepad"></i> Gameplay & Griefing</h3>
+                    <ul class="rules-list">
+                        <li>11. Dilarang Griefing (merusak bangunan orang lain).</li>
+                        <li>12. Dilarang mencuri item dari chest orang lain (jika tidak dikunci).</li>
+                        <li>13. Dilarang membuat mesin lag (Lag Machine).</li>
+                        <li>14. Dilarang membuat bangunan berbau pornografi.</li>
+                        <li>15. AFK Grinding diperbolehkan maksimal 30 menit.</li>
+                        <li>16. Dilarang menjebak player lain (Trapping) di area No-PvP.</li>
+                        <li>17. Dilarang mengklaim area terlalu dekat dengan base orang lain.</li>
+                        <li>18. Dilarang merusak alam sekitar spawn secara masif.</li>
+                        <li>19. PvP hanya diperbolehkan jika kedua belah pihak setuju.</li>
+                        <li>20. Dilarang melakukan Spawn Killing.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fa-solid fa-bug"></i> Client & Hacking</h3>
+                    <ul class="rules-list">
+                        <li>21. Dilarang menggunakan X-Ray (Texture pack/Mod).</li>
+                        <li>22. Dilarang menggunakan Fly Hack.</li>
+                        <li>23. Dilarang menggunakan Kill Aura / Killaura.</li>
+                        <li>24. Dilarang menggunakan Auto Clicker berlebihan (>15 CPS).</li>
+                        <li>25. Dilarang menggunakan Speed Hack / Jesus Hack.</li>
+                        <li>26. Dilarang memanfaatkan Bug/Glitch server (Lapor staff!).</li>
+                        <li>27. Dilarang menggunakan Bot untuk farming.</li>
+                        <li>28. Mod minimap diperbolehkan (tanpa radar player).</li>
+                        <li>29. Mod Schematica hanya untuk visual (bukan auto-build).</li>
+                        <li>30. Dilarang Bypass sistem AFK server.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fa-solid fa-gavel"></i> Ketentuan Akun</h3>
+                    <ul class="rules-list">
+                        <li>31. Satu orang maksimal memiliki 2 akun (Main & Alt).</li>
+                        <li>32. Dilarang jual beli item in-game dengan uang asli (RMT).</li>
+                        <li>33. Akun adalah tanggung jawab pemilik masing-masing.</li>
+                        <li>34. Ban Evading (masuk pakai akun lain saat di-ban) = Permanent Ban.</li>
+                        <li>35. Dilarang menyamar menjadi Staff (Impersonating).</li>
+                        <li>36. Skin karakter tidak boleh mengandung unsur pornografi.</li>
+                        <li>37. Jika menemukan cheater, wajib lapor via /report atau Discord.</li>
+                        <li>38. Keputusan Staff adalah mutlak dan tidak dapat diganggu gugat.</li>
+                        <li>39. Refund hanya dilakukan jika kesalahan dari sisi server.</li>
+                        <li>40. Bermain di AsiaClubSmp berarti setuju dengan semua aturan ini.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>ASIACLUB<span class="highlight">SMP</span></h3>
+            <p>Join the revolution. Build your legacy.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">© 2024 AsiaClubSmp. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
