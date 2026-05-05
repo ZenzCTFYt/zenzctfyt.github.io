@@ -1,0 +1,182 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Kecap Patch Studio
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="ambient ambient-one">
+  </div>
+  <div class="ambient ambient-two">
+  </div>
+  <div aria-hidden="true" class="page-noise">
+  </div>
+  <main class="page-shell">
+   <section aria-label="Kecap Patch Studio" class="studio-layout">
+    <aside class="intro-panel">
+     <div class="topline">
+      <span class="status-dot">
+      </span>
+      <span>
+       Web Version
+      </span>
+     </div>
+     <div class="brand-mark">
+      <img alt="Kecap Patch Studio logo" class="brand-logo" src="images/logo.png"/>
+      <div>
+       <p class="eyebrow">
+        Creative Media Toolkit
+       </p>
+       <h1>
+        Patch Studio
+       </h1>
+      </div>
+     </div>
+     <p class="hero-copy">
+      Ini adalah sebuah website yang dimana tujuannya adalah mengubah atau memformat ulang video yang kalian upload di website ini, supaya apasih videonya perlu di format ulang tujuannya adalah ketika kalian mengupload video di tiktok tidak terkompress.
+     </p>
+     <div aria-label="Fitur utama" class="feature-list">
+      <div class="feature-item">
+       <span>
+        01
+       </span>
+       <p>
+        Validasi resolusi otomatis sebelum proses dimulai.
+       </p>
+      </div>
+      <div class="feature-item">
+       <span>
+        02
+       </span>
+       <p>
+        Metadata file tampil ringkas supaya mudah dipantau.
+       </p>
+      </div>
+      <div class="feature-item">
+       <span>
+        03
+       </span>
+       <p>
+        Output MP4 langsung diunduh setelah kalibrasi selesai.
+       </p>
+      </div>
+     </div>
+     <p class="credit">
+      TikTok: @zenithxshu
+     </p>
+    </aside>
+    <section class="workspace-card">
+     <div class="panel-topbar">
+      <div>
+       <span class="chip">
+        60 FPS Utility
+       </span>
+       <h2>
+        Video Calibration
+       </h2>
+      </div>
+      <button aria-label="Info close" id="closeBtn" type="button">
+       ×
+      </button>
+     </div>
+     <div class="hero-strip">
+      <div>
+       <span class="hero-label">
+        Patch Ready
+       </span>
+       <strong>
+        Fast MP4 Calibration
+       </strong>
+      </div>
+      <span class="hero-note">
+       Maks. 4k
+      </span>
+     </div>
+     <input accept="video/*" id="fileInput" type="file"/>
+     <button class="upload-box" id="selectBtn" type="button">
+      <span aria-hidden="true" class="upload-icon">
+       <svg aria-label="Upload icon" role="img" viewbox="0 0 24 24">
+        <path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5">
+        </path>
+        <path d="M5 15.5v1.25A2.25 2.25 0 0 0 7.25 19h9.5A2.25 2.25 0 0 0 19 16.75V15.5">
+        </path>
+       </svg>
+      </span>
+      <span class="upload-copy">
+       <span class="upload-title">
+        Select Source Media
+       </span>
+       <span class="upload-subtitle">
+        Pilih file video dari perangkat kamu
+       </span>
+       <span id="fileName">
+        No file selected
+       </span>
+      </span>
+     </button>
+     <div aria-label="Informasi video" class="info-grid">
+      <div class="info-card">
+       <span class="info-label">
+        Resolution
+       </span>
+       <div class="info-value" id="resolutionValue">
+        ---
+       </div>
+      </div>
+      <div class="info-card">
+       <span class="info-label">
+        FPS
+       </span>
+       <div class="info-value" id="fpsValue">
+        ---
+       </div>
+      </div>
+      <div class="info-card">
+       <span class="info-label">
+        Bitrate
+       </span>
+       <div class="info-value" id="bitrateValue">
+        ---
+       </div>
+      </div>
+      <div class="info-card">
+       <span class="info-label">
+        Size
+       </span>
+       <div class="info-value" id="sizeValue">
+        ---
+       </div>
+      </div>
+     </div>
+     <div class="terminal-card">
+      <div class="terminal-head">
+       <span>
+        Activity Log
+       </span>
+       <span aria-hidden="true" class="terminal-leds">
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </span>
+      </div>
+      <div id="status">
+       &gt; System standing by...
+&gt; Awaiting media protocol...
+      </div>
+     </div>
+     <button disabled="" id="patchBtn" type="button">
+      Initialize Calibration
+     </button>
+    </section>
+   </section>
+  </main>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
